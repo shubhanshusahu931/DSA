@@ -1,3 +1,6 @@
+
+// "Kadane’s Algorithm ek efficient algorithm hai jo array ke andar maximum subarray sum nikalta hai — aur wo bhi sirf ek loop mein."
+
 #include<iostream>
 #include<vector>
 using namespace std;

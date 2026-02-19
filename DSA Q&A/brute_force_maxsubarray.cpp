@@ -1,5 +1,9 @@
+
+// "Brute Force Algorithm ek simple and direct approach hota hai jisme hum saare possible cases try karte hain, bina kisi smart optimization ke, jab tak correct answer na mil jaaye"
+
 #include<iostream>
 #include<vector>
+#include<climits>
 using namespace std;
 int maxSubArray(vector<int>& nums) {
     
@@ -7,7 +11,7 @@ int maxSubArray(vector<int>& nums) {
     int max_sum = INT_MIN;
     for(int i=0;i<n;i++){
         int currsum =0;
-        for(int j=i+1;j<n;j++){
+        for(int j=i;j<n;j++){
             currsum += nums[j];
             max_sum = max(currsum,max_sum);
         }
